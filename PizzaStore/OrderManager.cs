@@ -11,6 +11,16 @@ namespace PizzaStore
         private IBookingEngine _bookingEngine;
         private IPizzaShoppingCart _shoppingCart;
 
+        public void Order(Pizza selectedPizza)
+        {
+            _shoppingCart.Add(selectedPizza);
+        }
+
+        public List<Pizza> ViewCart()
+        {
+            return _shoppingCart.GetCartItems();
+        }
+
         public bool CanOrder()
         {
             return _shoppingCart.GetCartItems().Count > 1;
