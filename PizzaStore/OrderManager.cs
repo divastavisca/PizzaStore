@@ -11,7 +11,7 @@ namespace PizzaStore
         private IBookingEngine _bookingEngine;
         private IPizzaShoppingCart _shoppingCart;
 
-        public void Order(Pizza selectedPizza)
+        public void AddToCart(Pizza selectedPizza)
         {
             _shoppingCart.Add(selectedPizza);
         }
