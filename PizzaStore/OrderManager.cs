@@ -21,7 +21,7 @@ namespace PizzaStore
             return _shoppingCart.GetCartItems();
         }
 
-        public bool CanOrder()
+        private bool CanOrder()
         {
             return _shoppingCart.GetCartItems().Count > 1;
         }
