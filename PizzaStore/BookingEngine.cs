@@ -8,17 +8,7 @@ namespace PizzaStore
 {
     public class BookingEngine : IBookingEngine
     {
-        public void BookPizza(Pizza selectedPizza)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void CompleteTransaction()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void RemovePizza(Pizza selectedPizza)
+        public void CompleteTransaction(IPizzaShoppingCart userPurchases)
         {
             throw new NotImplementedException();
         }

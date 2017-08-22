@@ -23,7 +23,8 @@ namespace Pizza_Store_Tests
                         {"Pepperoni" },
                         {"Mushrooms" },
                         {"Onions" }
-                    }
+                    },
+                    120
                 );
         }
 
